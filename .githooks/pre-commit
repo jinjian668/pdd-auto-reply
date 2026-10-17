@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+ROOT="$(git rev-parse --show-toplevel)"
+exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$ROOT/tools/check_repo_safety.ps1"

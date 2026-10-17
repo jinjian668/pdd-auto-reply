@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "asset_type": "business-hours",
+  "label": "营业时间规则",
+  "source_table": "pdd_business_hours",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by"
+  ],
+  "items": []
+}

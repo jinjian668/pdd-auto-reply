@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "asset_type": "llm-configs",
+  "label": "AI 模型与指令",
+  "source_table": "pdd_llm_config",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "api_base",
+    "api_key_enc",
+    "created_by"
+  ],
+  "items": []
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "asset_type": "goods-replies",
+  "label": "商品专属回复",
+  "source_table": "pdd_goods_reply",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by"
+  ],
+  "items": []
+}

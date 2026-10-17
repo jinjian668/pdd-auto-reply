@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "asset_type": "default-replies",
+  "label": "默认回复模板",
+  "source_table": "pdd_default_reply",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by"
+  ],
+  "items": []
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "source_database": "pdd_auto_reply",
+  "asset_count": 12,
+  "total_rows": 0,
+  "files": [
+    {
+      "file": "customer-service-knowledge.json",
+      "asset_type": "customer-service-knowledge",
+      "label": "客服话术知识库",
+      "source_table": "pdd_customer_service_knowledge",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "f406a823765bf0bbb08dbc007adeb5a82a2005210ff5c87106baf13761b9db75"
+    },
+    {
+      "file": "product-knowledge.json",
+      "asset_type": "product-knowledge",
+      "label": "商品知识",
+      "source_table": "pdd_product_knowledge",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by",
+        "thumb_url"
+      ],
+      "sha256": "d3fc224ec60a39e66c5b26d8c31df978f4af232721ffc31cd81012b0415bed6f"
+    },
+    {
+      "file": "keyword-rules.json",
+      "asset_type": "keyword-rules",
+      "label": "关键词回复规则",
+      "source_table": "pdd_keyword_rule",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "d9c8f848c2c5968e7afc86122d75c64dec18dc84b7f553847f3ec967469d9bd2"
+    },
+    {
+      "file": "default-replies.json",
+      "asset_type": "default-replies",
+      "label": "默认回复模板",
+      "source_table": "pdd_default_reply",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "74f9fe350927588af525719a906ec45bf1eca161c8193d4d7d3a682e7f2f433e"
+    },
+    {
+      "file": "goods-replies.json",
+      "asset_type": "goods-replies",
+      "label": "商品专属回复",
+      "source_table": "pdd_goods_reply",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "14632b071e01ae5fd840f9b298fa07d65164aa493de0e0f25fed03d93acc0061"
+    },
+    {
+      "file": "business-hours.json",
+      "asset_type": "business-hours",
+      "label": "营业时间规则",
+      "source_table": "pdd_business_hours",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "d1f404075b6741689efcd80b12cefaf1207641fbf9403c56c805b052d78eed50"
+    },
+    {
+      "file": "message-filter-rules.json",
+      "asset_type": "message-filter-rules",
+      "label": "消息过滤规则",
+      "source_table": "pdd_message_filter_rule",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "048bf7625b026041e691e42c796e28d4f1d97185b5eb394701545a3f40094ff2"
+    },
+    {
+      "file": "risk-rules.json",
+      "asset_type": "risk-rules",
+      "label": "风控规则",
+      "source_table": "pdd_risk_rule",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "ee749eea7a1620816625cc8aac40d020c22b98ab59b1e57b64aac439e7768a63"
+    },
+    {
+      "file": "transfer-keywords.json",
+      "asset_type": "transfer-keywords",
+      "label": "转人工关键词",
+      "source_table": "pdd_transfer_keyword",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "4bdaeefbc22b0739b28d2a1ee0d6a97e1a4772b104dd475becccfed91ffb2c30"
+    },
+    {
+      "file": "scheduled-tasks.json",
+      "asset_type": "scheduled-tasks",
+      "label": "定时任务配置",
+      "source_table": "pdd_scheduled_task",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by",
+        "last_run_at",
+        "next_run_at"
+      ],
+      "sha256": "60a97c59aa951074da4518b6958eeded6180c5aea152da6eb347ff8552f52994"
+    },
+    {
+      "file": "llm-configs.json",
+      "asset_type": "llm-configs",
+      "label": "AI 模型与指令",
+      "source_table": "pdd_llm_config",
+      "row_count": 0,
+      "excluded_columns": [
+        "api_base",
+        "api_key_enc",
+        "created_by"
+      ],
+      "sha256": "8bda82ffd12be787bee71513399debf4e21b59870e9887e594a9b3ce1502f1e0"
+    },
+    {
+      "file": "announcements.json",
+      "asset_type": "announcements",
+      "label": "系统公告",
+      "source_table": "pdd_announcement",
+      "row_count": 0,
+      "excluded_columns": [
+        "created_by"
+      ],
+      "sha256": "62606a5ee4ce700500572e0b7e51885e1add2630723c107d9e6b10a57f2e87e0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "asset_type": "product-knowledge",
+  "label": "商品知识",
+  "source_table": "pdd_product_knowledge",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by",
+    "thumb_url"
+  ],
+  "items": []
+}

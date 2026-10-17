@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "asset_type": "scheduled-tasks",
+  "label": "定时任务配置",
+  "source_table": "pdd_scheduled_task",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by",
+    "last_run_at",
+    "next_run_at"
+  ],
+  "items": []
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "asset_type": "customer-service-knowledge",
+  "label": "客服话术知识库",
+  "source_table": "pdd_customer_service_knowledge",
+  "generated_at": "2026-10-18T00:26:27+08:00",
+  "row_count": 0,
+  "excluded_columns": [
+    "created_by"
+  ],
+  "items": []
+}
