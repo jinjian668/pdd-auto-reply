@@ -109,7 +109,7 @@ defineExpose({ refresh })
           </div>
           <div class="min-w-0">
             <div class="flex flex-wrap items-center gap-2">
-              <h2 class="text-base font-semibold text-slate-800 dark:text-slate-100">AI 客服服务</h2>
+              <h2 class="text-base font-semibold text-slate-800 dark:text-slate-100">AI 客服后台服务</h2>
               <span :class="badgeClass">
                 <span :class="dotClass" aria-hidden="true"></span>
                 <span role="status" aria-live="polite" aria-atomic="true">{{ statusText }}</span>
@@ -117,6 +117,9 @@ defineExpose({ refresh })
             </div>
             <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
               上线后持续连接店铺并处理咨询；下线只停止 AI 客服后台进程，管理后台与数据库保持可用。
+            </p>
+            <p class="mt-1 text-xs text-slate-500 dark:text-slate-400">
+              系统登录不会自动启动 AI 客服。通过桌面快捷方式打开工作台后，请在此手动上线或下线。
             </p>
             <div v-if="loaded" class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
               <span>最近检查：{{ formatDateTime(lastUpdated) }}</span>
@@ -164,7 +167,7 @@ defineExpose({ refresh })
     <ConfirmModal
       v-model="stopConfirmOpen"
       title="确认下线 AI 客服？"
-      message="下线后将停止自动连接和回复。管理后台、数据库与历史数据不会停止，可随时在本页重新上线。"
+      message="下线后将停止自动连接和回复，系统重启也不会自动上线。管理后台、数据库与历史数据不会停止，可随时在本页重新上线。"
       confirm-text="确认下线"
       type="danger"
       :loading="busyAction === 'stop'"

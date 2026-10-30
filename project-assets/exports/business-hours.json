@@ -3,7 +3,7 @@
   "asset_type": "business-hours",
   "label": "营业时间规则",
   "source_table": "pdd_business_hours",
-  "generated_at": "2026-10-31T00:59:56+08:00",
+  "generated_at": "2026-10-31T01:10:45+08:00",
   "row_count": 0,
   "excluded_columns": [
     "created_by"

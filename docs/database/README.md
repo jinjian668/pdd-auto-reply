@@ -50,6 +50,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\export-business-as
 
 | 日期 | 变更 | 兼容性 |
 | --- | --- | --- |
+| 2026-10-31 | 移除 Windows 登录自启动，AI 客服改为工作台手动启停；无表结构变化，重新生成结构快照 | 完全兼容，无迁移 |
 | 2026-10-31 | 新增工作台 AI 客服上下线；无表结构变化，运行时状态使用 `runtime/run/ai-service.offline` 标记 | 完全兼容，无迁移 |
 | 2026-10-18 | 建立 34 表结构快照与业务资产导出规则 | 无表结构变更 |
 
