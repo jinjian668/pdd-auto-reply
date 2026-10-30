@@ -24,8 +24,8 @@ RUN npm ci --no-audit --no-fund
 # 复制前端源码
 COPY frontend/ .
 
-# 构建生产版本（前端 API 基址使用相对路径 /api，经 nginx 反向代理到后端，
-# 见 .env.production 中 VITE_API_BASE_URL=/api，不写死 localhost）
+# 构建生产版本（前端 API 基址默认 /api/v1，与 backend API_PREFIX 一致，
+# 经 nginx 反向代理到后端；也可用 VITE_API_BASE_URL 显式覆盖，不写死 localhost）
 RUN npm run build
 
 # ====== 第二阶段：运行（Nginx 提供静态资源） ======

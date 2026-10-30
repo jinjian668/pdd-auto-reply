@@ -153,6 +153,7 @@ function onOverlayClick() {
 .modal-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: rgba(0, 0, 0, 0.5);
   /* 鼠标在遮罩上显示默认箭头，提示不可点击关闭 */
   cursor: default;
@@ -160,6 +161,7 @@ function onOverlayClick() {
 
 .modal-dialog {
   position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 380px;
   margin: 0 16px;

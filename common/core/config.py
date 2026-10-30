@@ -63,6 +63,8 @@ class Settings(BaseSettings):
     log_level: str = Field(default="INFO")
     # 静态资源目录（backend 提供静态文件时使用）
     static_dir: str = Field(default="static")
+    # 本机运行时目录（日志、PID、下线标记等；为空时不支持网页内进程控制）
+    pdd_runtime_dir: str = Field(default="")
     # 全链路时区，统一北京时间（开发规范 17、需求 24.8）
     timezone: str = Field(default="Asia/Shanghai")
 

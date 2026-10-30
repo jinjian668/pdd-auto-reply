@@ -19,3 +19,5 @@ export * as autoReplyApi from './auto_reply_api'
 export * as chatApi from './chat_api'
 // 商品管理
 export * as productApi from './product_api'
+// AI 客服进程状态与上线下线
+export * as aiServiceApi from './ai_service_api'

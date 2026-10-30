@@ -14,6 +14,7 @@ from fastapi import APIRouter
 
 from app.api.routes import (
     ai_config,
+    ai_service,
     announcements,
     auth,
     backup,
@@ -69,6 +70,9 @@ api_router.include_router(replies.router)
 
 # AI（LLM）配置接口：接口类型选择 / 测试连接 / 配置保存（需求 8）。
 api_router.include_router(ai_config.router)
+
+# AI 客服后台进程状态与上线下线控制（本机部署）。
+api_router.include_router(ai_service.router)
 
 # 营业时间配置接口（需求 11.1）。
 api_router.include_router(business_hours.router)

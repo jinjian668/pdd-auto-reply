@@ -10,10 +10,12 @@
 import { onMounted, ref } from 'vue'
 import { Store, MessageSquare, Bot, Sparkles, ShieldAlert, RefreshCw } from 'lucide-vue-next'
 import { Loading } from '@/components/common'
+import AiServiceStatusCard from '@/components/dashboard/AiServiceStatusCard.vue'
 import { fetchDashboardOverview } from '@/api/dashboard_api'
 import { formatNumber } from '@/utils/format'
 
 const loading = ref(false)
+const serviceCardRef = ref(null)
 
 // 关键指标卡片定义（中文标题 + 取值键 + 图标 + 图标底色样式类），顺序即展示顺序
 const metricDefs = [
@@ -45,6 +47,10 @@ async function loadOverview() {
 }
 
 onMounted(loadOverview)
+
+async function refreshAll() {
+  await Promise.allSettled([loadOverview(), serviceCardRef.value?.refresh()])
+}
 </script>
 
 <template>
@@ -55,11 +61,13 @@ onMounted(loadOverview)
         <h1 class="page-title">仪表盘</h1>
         <p class="page-description">关键运营指标总览（北京时间）</p>
       </div>
-      <button type="button" class="btn-ios-secondary" :disabled="loading" @click="loadOverview">
+      <button type="button" class="btn-ios-secondary" :disabled="loading" @click="refreshAll">
         <RefreshCw class="w-4 h-4" :class="{ 'animate-spin': loading }" />
         刷新数据
       </button>
     </div>
+
+    <AiServiceStatusCard ref="serviceCardRef" class="mb-4 sm:mb-6" />
 
     <!-- 关键指标卡片区（相对定位以承载区域加载遮罩） -->
     <div class="relative min-h-[120px]">

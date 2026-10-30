@@ -11,5 +11,6 @@
 
 ## 当前需求
 
+- [2026-10-31 工作台 AI 客服上线下线](2026-10-31-ai-service-online-offline.md)
 - [2026-10-18 项目资产治理与 GitHub 同步](2026-10-18-project-asset-governance.md)
 - [2026-10-18 本地部署、自启动与桌面入口](2026-10-18-local-deployment.md)
